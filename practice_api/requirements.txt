@@ -1,0 +1,15 @@
+Django==2.2.7
+djangorestframework==3.10.3
+Markdown==3.1.1
+django-filters==0.2.1
+django-filter==2.2.0
+mysqlclient==1.4.6
+mysql-connector-python==8.0.18
+jsonfield==2.0.2
+django-cors-headers==3.2.0
+elasticsearch-dsl==7.1.0
+elasticsearch==7.1.0
+django_elasticsearch_dsl
+django_elasticsearch_dsl_drf
+requests
+python-logstash
