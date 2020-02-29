@@ -4,19 +4,18 @@ FROM python:3.8
 MAINTAINER Eduardo Cervantes <ing.eduardocervantes@gmail.com>
 
 # Environment variable for directory containing our app
-ENV APP /app
 ENV PYTHONUNBUFFERED 1
 
 # Define working directory
-RUN mkdir $APP
+RUN mkdir /app
 
-WORKDIR $APP
+WORKDIR /app
 
-# Copy full rest repository
-ADD . $APP
+COPY requirements.txt /app/
 
 # Install missing dependencies
 RUN pip install -r requirements.txt
 
-# Expose default port
-EXPOSE 8000
+
+# Copy full rest repository
+COPY . /app/
